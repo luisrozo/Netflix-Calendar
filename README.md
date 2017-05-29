@@ -7,7 +7,7 @@ Si siempre te pierdes tus series favoritas en Netflix, utilizando ***Netflax Cal
 - [Manuel Rodríguez-Sanchez Guerra](https://github.com/manuelrdsg)
 - [Luis Gonzaga Rozo Bueno](https://github.com/luisrozo)
 
-## Metodo de uso
+## Método de uso
 
 Pare ejecutar la aplicación es necesario tener instaladas las siguientes librerías Python: *Celery, Dropbox, Tweepy, Google Calendar*, además de *RabbitMQ* u otro broker. El programa corre sobre **Python3**.
 
