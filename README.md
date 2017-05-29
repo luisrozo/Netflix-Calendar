@@ -1,8 +1,6 @@
-# Netflax Calendar
-
 ![Netflax Calendar logo](http://i.imgur.com/E4wKn4j.png)
 
-Si siempre te pierdes tus series favoritas en Netflix, utilizando *Netflax Calendar* se actualizará tu calendario de Google cada vez que la cuenta ***@gallonetflix*** tuitee la fecha de salida de una nueva serie en dicha plataforma.
+Si siempre te pierdes tus series favoritas en Netflix, utilizando *Netflax Calendar* se actualizará tu calendario de Google cada vez que la cuenta ***@gallonetflix*** tuitee la fecha de salida de una nueva serie o película en dicha plataforma.
 
 ## Participantes
 
@@ -11,24 +9,24 @@ Si siempre te pierdes tus series favoritas en Netflix, utilizando *Netflax Calen
 
 ## Metodo de uso
 
-Pare ejecutar la aplicación es necesario tener instalados las siguientes librerías Python: *Celery, Dropbox, Tweepy, Google Calendar*, además de *RabbitMQ* u otro broker. El programa corre sobre **Python3**.
+Pare ejecutar la aplicación es necesario tener instaladas las siguientes librerías Python: *Celery, Dropbox, Tweepy, Google Calendar*, además de *RabbitMQ* u otro broker. El programa corre sobre **Python3**.
 
-1. Ejecutar rabbitmq, para esto lazaremos el siguiente comando
+1. Ejecutar rabbitmq, para esto lanzaremos el siguiente comando
 	```
 	sudo rabbitmq-server
     ```
     
-2. Lanzar el worker de celery, para esto, estando situados en la carpeta raiz del proyecto ejecutaremos el siguiente comando
+2. Lanzar el worker de celery, para esto, estando situados en la carpeta raiz del proyecto, ejecutaremos el siguiente comando
 	```
 	celery -A server woker --loglevel=info
     ```
 
-3. Lanzar el steaming de twitter, para esto ejecutaremos el fichero python *twitter.py*
+3. Lanzar el streaming de Twitter, para esto ejecutaremos el fichero *twitter.py*
 	```
 	python3 twitter.py
     ```
     
-4. Ejecutar el programa que nos actualize el calendario una vez que se hayan publicado tweets nuevos
+4. Ejecutar el programa que nos actualice el calendario una vez que se hayan publicado tuits nuevos
 	```
 	python3 calen.py
     ```
