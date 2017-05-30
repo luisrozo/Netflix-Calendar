@@ -24,7 +24,7 @@ Una vez hecho esto, realizar los siguientes pasos:
     
 2. Lanzar el worker de celery, para esto, estando situados en la carpeta raiz del proyecto, ejecutaremos el siguiente comando
 	```
-	celery -A server woker --loglevel=info
+	celery -A server worker --loglevel=info
     ```
 
 3. Lanzar el streaming de Twitter, para esto ejecutaremos el fichero *twitter.py*
